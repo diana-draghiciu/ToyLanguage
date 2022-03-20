@@ -4,20 +4,10 @@ A Java project that is implemented as an interpreter for a toy language.
 
 
 -Model-view-controller architectural pattern and object-oriented concepts used. 
-
-
 -Provides a graphical user interface (JavaFX).
-
-
 -Multi-threading implemented
-
-
 -Handles exceptions
-
-
 -Expressions: arithmetic (+,-,*,/), logic (&,|), relational (<,<=,==,!=,>,>=), variable, value, read from heap expressions.
-
-
 -Statements: variable declaration statement, assign, compound, fork, if, open/close file, read from file, print, switch, while etc
 
 
@@ -30,17 +20,9 @@ Our mini interpreter uses several structures:
 
 
 –Execution Stack (ExeStack): a stack of statements to execute the currrent program
-
-
 –Table of Symbols (SymTable): a table which keeps the variables values
-
-
 –Output (OutTable): that keeps all the messages printed by the toy program
-
-
 -Heap (HeapTable): manages the heap memory.
-
-
 -Table of Files (FileTable): a table which keeps all the files from which data is read
 
 
