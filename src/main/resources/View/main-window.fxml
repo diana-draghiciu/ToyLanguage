@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="681.0" prefWidth="971.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <TextField fx:id="nrProgStates" alignment="CENTER" prefHeight="25.0" prefWidth="122.0" text="nr of Progstates" />
+      <HBox maxHeight="-Infinity" prefHeight="300.0" prefWidth="857.0">
+         <children>
+            <Label text="OutTable" />
+            <ListView fx:id="outTable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="250.0" />
+            <Label text="HeapTable" />
+            <TableView fx:id="heapTable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="210.0">
+              <columns>
+                <TableColumn fx:id="heapAddressColumn" prefWidth="110.0" text="address" />
+                <TableColumn fx:id="heapValueColumn" prefWidth="99.0" text="value" />
+              </columns>
+            </TableView>
+            <Label text="FileTable" />
+            <ListView fx:id="fileTable" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="250.0" />
+         </children>
+      </HBox>
+      <HBox maxHeight="-Infinity" prefHeight="300.0" prefWidth="200.0">
+         <children>
+            <Label text="ProgID" />
+            <ListView fx:id="progStateIdentifiers" prefHeight="266.0" prefWidth="101.0" />
+            <Label text="SymTable" />
+            <TableView fx:id="symTable" prefHeight="100.0" prefWidth="210.0">
+              <columns>
+                <TableColumn fx:id="symVarNameColumn" prefWidth="108.0" text="var name" />
+                <TableColumn fx:id="symValueColumn" prefWidth="104.0" text="value" />
+              </columns>
+            </TableView>
+            <Label text="ExeStack" />
+            <ListView fx:id="exeStack" prefHeight="266.0" prefWidth="227.0" />
+            <Label text="Semaphore" />
+            <TableView fx:id="semaphore" prefHeight="266.0" prefWidth="222.0">
+              <columns>
+                <TableColumn fx:id="semafIndexColumn" prefWidth="66.0" text="index" />
+                <TableColumn fx:id="semafValueColumn" prefWidth="60.0" text="value" />
+                  <TableColumn fx:id="semafListColumn" prefWidth="97.0" text="listval" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Button fx:id="runOneStepButton" mnemonicParsing="false" text="Run one step" />
+   </children>
+</VBox>
